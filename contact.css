@@ -1,0 +1,88 @@
+/* ------------------- */
+/* Contact section     */
+/* ------------------- */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.contact-title {
+  font-size: var(--size-2xl);
+}
+
+.contact-description {
+  font-size: var(--size-xs);
+  max-width: 40ch;
+}
+
+.contact-btn {
+  font-size: var(--size-xs);
+}
+
+/* ------------------- */
+/* Breakpoints         */
+/* ------------------- */
+/* xs */
+@media (min-width: 475px) {
+  .contact-title {
+    font-size: var(--size-3xl);
+  }
+
+  .contact-description {
+    font-size: var(--size-sm);
+  }
+
+  .contact-btn {
+    font-size: var(--size-sm);
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .contact-title {
+    font-size: var(--size-4xl);
+  }
+
+  .contact-description {
+    font-size: var(--size-base);
+  }
+
+  .contact-btn {
+    font-size: var(--size-base);
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .contact-title {
+    font-size: var(--size-5xl);
+  }
+
+  .contact-description {
+    font-size: var(--size-lg);
+  }
+
+  .contact-btn {
+    font-size: var(--size-body);
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .contact-description {
+    font-size: var(--size-body);
+  }
+}
+
+/* xl */
+/* @media (min-width: 1280px) {
+  } */
+
+/* 2xl */
+/* @media (min-width: 1536px) {
+  } */

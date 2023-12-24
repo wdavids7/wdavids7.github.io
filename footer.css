@@ -1,0 +1,190 @@
+/* ------------------- */
+/* Footer section      */
+/* ------------------- */
+
+.footer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.social-media-container {
+  display: flex;
+  justify-content: center;
+}
+
+.social-media-container a {
+  color: var(--color-text-primary);
+}
+
+.social-media-container .icon {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0.056em;
+  position: relative;
+  text-align: center;
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: 2;
+}
+
+.social-media-container .icon span {
+  border-radius: 50%;
+  display: block;
+  height: 2.5em;
+  position: relative;
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  width: 2.5em;
+  z-index: 2;
+}
+
+.social-media-container .icon span i {
+  font-size: var(--size-sm);
+  line-height: 2.5rem;
+}
+
+.social-media-container .icon .tooltip {
+  background-color: var(--color-white);
+  border-radius: 25px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  color: var(--color-white);
+  font-size: var(--size-xs);
+  font-weight: 500;
+  opacity: 0;
+  padding: 0.3em 0.438em;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: 1;
+}
+
+.social-media-container .icon:hover .tooltip {
+  opacity: 1;
+  pointer-events: auto;
+  top: -50px;
+}
+
+.icon .tooltip:before {
+  content: "";
+  background-color: var(--color-white);
+  bottom: -6px;
+  height: 0.938em;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%) rotate(45deg);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  width: 0.938em;
+}
+
+.social-media-container .icon:hover span {
+  color: var(--color-white);
+}
+
+.social-media-container .icon:hover span,
+.social-media-container .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+}
+
+.social-media-container .instagram:hover span,
+.social-media-container .instagram:hover .tooltip,
+.social-media-container .instagram:hover .tooltip:before {
+  background-color: var(--color-cyan-600);
+}
+
+.social-media-container .github:hover span,
+.social-media-container .github:hover .tooltip,
+.social-media-container .github:hover .tooltip:before {
+  background-color: var(--color-cyan-600);
+}
+
+.social-media-container .linkedin:hover span,
+.social-media-container .linkedin:hover .tooltip,
+.social-media-container .linkedin:hover .tooltip:before {
+  background-color: var(--color-cyan-600);
+}
+
+.social-media-container .downloadCV:hover span,
+.social-media-container .downloadCV:hover .tooltip,
+.social-media-container .downloadCV:hover .tooltip:before {
+  background-color: var(--color-cyan-600);
+}
+
+.social-media-container .email:hover span,
+.social-media-container .email:hover .tooltip,
+.social-media-container .email:hover .tooltip:before {
+  background-color: var(--color-cyan-600);
+}
+
+p.footer-title {
+  color: var(--color-text-tertiary);
+  font-size: var(--size-xxs);
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  user-select: none;
+}
+
+/* ------------------- */
+/* Breakpoints         */
+/* ------------------- */
+/* xs */
+@media (min-width: 475px) {
+  .social-media-container .icon {
+    margin: 0 0.938em;
+  }
+
+  .social-media-container .icon span {
+    height: 3em;
+    width: 3em;
+  }
+
+  .social-media-container .icon span i {
+    font-size: var(--size-base);
+    line-height: 3rem;
+  }
+
+  .social-media-container .icon .tooltip {
+    font-size: var(--size-base);
+    padding: 0.3em 0.538em;
+  }
+
+  p.footer-title {
+    font-size: var(--size-sm);
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .social-media-container .icon span {
+    height: 3em;
+    width: 3em;
+  }
+
+  .social-media-container .icon span i {
+    font-size: var(--size-lg);
+    line-height: 3rem;
+  }
+}
+
+/* md */
+/* @media (min-width: 768px) {
+} */
+
+/* lg */
+/* @media (min-width: 1024px) {
+  } */
+
+/* xl */
+/* @media (min-width: 1280px) {
+  } */
+
+/* 2xl */
+/* @media (min-width: 1536px) {
+  } */

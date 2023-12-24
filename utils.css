@@ -1,0 +1,121 @@
+/* ------------------- */
+/* Breakpoints         */
+/* ------------------- */
+/* xs */
+/* @media (min-width: 475px) {
+  } */
+
+/* sm */
+/* @media (min-width: 640px) {
+  } */
+
+/* md */
+/* @media (min-width: 768px) {
+} */
+
+/* lg */
+/* @media (min-width: 1024px) {
+  } */
+
+/* xl */
+/* @media (min-width: 1280px) {
+  } */
+
+/* 2xl */
+/* @media (min-width: 1536px) {
+  } */
+
+/* ------------------- */
+/* Utility classes     */
+/* ------------------- */
+
+.btn {
+  display: inline-block;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: -0.05em;
+  color: var(--color-white);
+  padding: 0.5em 1em;
+  border-radius: 50px;
+  background-color: var(--color-cyan-600);
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  background-color: var(--color-white);
+  color: var(--color-cyan-600);
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.25);
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.section {
+  padding: 7rem 0 7rem;
+}
+
+.loading {
+  filter: blur(40px) grayscale(100%);
+}
+
+.loaded {
+  filter: blur(0) grayscale(0);
+  transition: 0.7s ease-in-out;
+}
+
+/* ------------------- */
+/* Breakpoints         */
+/* ------------------- */
+
+/* xs */
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+
+  .section {
+    padding: 10rem 0 10rem;
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}

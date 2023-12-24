@@ -1,0 +1,86 @@
+/* ------------------- */
+/* Hero section        */
+/* ------------------- */
+
+.hero {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+}
+
+h1.hero-title {
+  color: var(--color-text-primary);
+  font-size: var(--size-3xl);
+  letter-spacing: -0.05em;
+  line-height: 0.9;
+  position: relative;
+  text-align: center;
+}
+
+.hero-span-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-description-container {
+  display: grid;
+  grid-template-columns: 1fr min(60ch, 100%) 1fr;
+}
+
+.hero-description-container > .hero-description {
+  grid-column: 2;
+}
+
+p.hero-description {
+  color: var(--color-text-tertiary);
+  font-size: var(--size-xs);
+  letter-spacing: -0.3px;
+  text-align: center;
+  max-width: 40ch;
+}
+
+/* ------------------- */
+/* Breakpoints         */
+/* ------------------- */
+
+/* xs */
+@media (min-width: 475px) {
+  h1.hero-title {
+    font-size: var(--size-h1);
+  }
+
+  p.hero-description {
+    font-size: var(--size-sm);
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  p.hero-description {
+    font-size: var(--size-base);
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  p.hero-description {
+    font-size: var(--size-body);
+    max-width: 100%;
+  }
+}
+
+/* lg */
+/* @media (min-width: 1024px) {
+  } */
+
+/* xl */
+/* @media (min-width: 1280px) {
+  } */
+
+/* 2xl */
+/* @media (min-width: 1536px) {
+  } */

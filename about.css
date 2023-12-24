@@ -1,0 +1,115 @@
+/* ------------------- */
+/* About section       */
+/* ------------------- */
+
+.about-title-container {
+  padding: calc(var(--size-xl) - 10px) calc(var(--size-xl) - 6px);
+}
+
+h2.about-title {
+  color: var(--color-text-tertiary);
+  font-size: var(--size-h2);
+  text-align: center;
+  width: 100%;
+}
+
+img.about-img {
+  border-radius: 50%;
+  border: 0.125rem solid var(--color-white);
+  margin: auto;
+  width: 9.375rem;
+}
+
+.about-content-container {
+  margin: auto;
+  max-width: 60ch;
+  width: 80%;
+}
+
+.about-subtitle {
+  color: var(--color-text-secondary);
+  font-size: var(--size-xs);
+  font-weight: 600;
+  padding: 2rem 0 1rem;
+  text-align: left;
+}
+
+span.about-color {
+  color: var(--color-cyan-600);
+  font-weight: 500;
+}
+
+.about-description {
+  color: var(--color-text-secondary);
+  font-size: var(--size-xs);
+  margin: auto;
+  text-align: justify;
+  font-weight: 300;
+}
+
+/* ------------------- */
+/* Breakpoints         */
+/* ------------------- */
+/* xs */
+@media (min-width: 475px) {
+  img.about-img {
+    width: 10.375rem;
+  }
+
+  .about-subtitle {
+    font-size: var(--size-sm);
+  }
+
+  .about-description {
+    font-size: var(--size-sm);
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  img.about-img {
+    width: 12.5rem;
+  }
+
+  .about-subtitle {
+    font-size: var(--size-base);
+  }
+
+  .about-description {
+    font-size: var(--size-base);
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  img.about-img {
+    width: 15.625rem;
+  }
+
+  .about-content-container {
+    max-width: 80ch;
+  }
+
+  .about-subtitle {
+    font-size: var(--size-xl);
+  }
+
+  .about-description {
+    font-size: var(--size-lg);
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .about-content-container {
+    max-width: 90ch;
+  }
+}
+
+/* xl */
+/* @media (min-width: 1280px) {
+  } */
+
+/* 2xl */
+/* @media (min-width: 1536px) {
+  } */
