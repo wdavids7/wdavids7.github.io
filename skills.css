@@ -98,31 +98,6 @@ h2.skills-title {
   }
 }
 
-.skill-per .tooltip {
-  background: var(--color-cyan-600);
-  border-radius: 3px;
-  color: var(--color-white);
-  font-size: var(--size-xs);
-  font-weight: 500;
-  padding: 0.125em 0.375em;
-  position: absolute;
-  right: -14px;
-  top: -28px;
-  z-index: 1;
-}
-
-/* .tooltip::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: -2px;
-  height: 0.625em;
-  width: 0.625em;
-  z-index: -1;
-  background: var(--color-cyan-600);
-  transform: translateX(-50%) rotate(45deg);
-} */
-
 /* ------------------- */
 /* Breakpoints         */
 /* ------------------- */
@@ -135,13 +110,6 @@ h2.skills-title {
   .skill-box .title {
     font-size: var(--size-sm);
   }
-
-  /* .skill-per .tooltip {
-    font-size: var(--size-sm);
-    padding: 0.094em 0.406em;
-    right: -17px;
-    top: -30px;
-  } */
 }
 
 /* sm */
@@ -153,13 +121,6 @@ h2.skills-title {
   .skill-box .title {
     font-size: var(--size-base);
   }
-
-  /* .skill-per .tooltip {
-    font-size: var(--size-base);
-    padding: 0.125em 0.438em;
-    right: -19px;
-    top: -32px;
-  } */
 }
 
 /* md */
@@ -179,12 +140,6 @@ h2.skills-title {
   .skill-box .skill-bar {
     height: 0.625em;
   }
-
-  /* .skill-per .tooltip {
-    padding: 0.156em 0.469em;
-    right: -21px;
-    top: -34px;
-  } */
 }
 
 /* lg */
